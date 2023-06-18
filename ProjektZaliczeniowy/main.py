@@ -1,4 +1,3 @@
-import io
 
 import pandas as pd
 import sqlite3
@@ -12,16 +11,6 @@ from pandasgui import show
 
 import matplotlib.pyplot as plt
 from tkinter import messagebox
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -50,7 +39,7 @@ with open('model.pkl','rb') as file:
 
 #GUI
 root = tk.Tk()
-root.title("Wine Classifier")
+root.title("Wine Something or else")
 
 def train_model():
     global model
