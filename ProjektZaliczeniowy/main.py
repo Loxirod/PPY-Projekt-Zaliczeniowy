@@ -1,3 +1,4 @@
+import io
 
 import pandas as pd
 import sqlite3
@@ -59,10 +60,10 @@ def predict_new_data():# to be done
 def rebuild_model():
     train_model()
 
+
 # Tworzenie przycisków
 button_font = ("Arial", 12, "bold")
 train_button = tk.Button(root, text="Train like John Cena", command=train_model, bg="red", width=50, height=2, font=button_font)
-
 train_button.pack()
 
 test_button = tk.Button(root, text="Test accuracy", command=test_model, bg="Blue", width=25, height=2, font=button_font)
@@ -111,28 +112,4 @@ def read_from_database():
 read_button = tk.Button(root, text="Read from Database", command=read_from_database, bg="red", width=25, height=2, font=button_font)
 read_button.pack()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 root.mainloop()
-
-
-
-
-
-
